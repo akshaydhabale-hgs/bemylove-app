@@ -1,0 +1,211 @@
+.proposal-container {
+  width: 100%;
+  max-width: 600px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.proposal-card {
+  background: white;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.proposal-question {
+  color: #d63384;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  line-height: 1.3;
+  font-family: 'Georgia', serif;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.btn-yes {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  color: white;
+}
+
+.btn-yes:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 107, 157, 0.5);
+}
+
+.btn-no {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.btn-no:hover {
+  background: #d0d0d0;
+}
+
+.from-text {
+  color: #999;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Celebration styles */
+.celebration {
+  text-align: center;
+}
+
+.celebration-content {
+  background: white;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.yay-title {
+  font-size: 3rem;
+  color: #ff4d6d;
+  margin-bottom: 15px;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.celebration-text {
+  font-size: 1.3rem;
+  color: #ff4d6d;
+  margin-bottom: 20px;
+}
+
+.gif-container {
+  margin: 25px 0;
+}
+
+.celebration-gif, .sad-gif {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.love-message {
+  font-family: 'Brush Script MT', cursive, 'Georgia', serif;
+  font-size: 2.5rem;
+  color: #d63384;
+  margin: 20px 0 10px;
+}
+
+.sender-name {
+  font-family: 'Brush Script MT', cursive, 'Georgia', serif;
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 25px;
+}
+
+.btn-share {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-share:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.4);
+}
+
+/* Sad styles */
+.sad {
+  text-align: center;
+}
+
+.sad-title {
+  font-size: 2.5rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.sad-text {
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.btn-retry {
+  background: #e0e0e0;
+  color: #666;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-retry:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .proposal-question {
+    font-size: 1.8rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    min-width: auto;
+  }
+
+  .yay-title {
+    font-size: 2.2rem;
+  }
+
+  .love-message {
+    font-size: 2rem;
+  }
+}
